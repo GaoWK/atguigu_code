@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_blue_light"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="OKHttp"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_get_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="get和post请求" />
+
+    <Button
+        android:id="@+id/btn_get_by_okhttputils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="okhttputils get请求" />
+    <Button
+        android:id="@+id/btn_post_by_okhttputils"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="okhttputils post请求" />
+
+    <Button
+        android:id="@+id/btn_downloadFile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="下载文件" />
+    <Button
+        android:id="@+id/btn_downloadImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载单张图片"/>
+    <Button
+        android:id="@+id/btn_downloadImg_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="加载列表图片"/>
+
+
+
+    <ProgressBar
+        style="?android:progressBarStyleHorizontal"
+        android:layout_gravity="bottom"
+        android:id="@+id/mProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示请求数据" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
